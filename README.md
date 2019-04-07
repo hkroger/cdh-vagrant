@@ -77,3 +77,6 @@ I understand the risks, let me continue with cluster creation.` and click `Conti
 - Resume the cluster: `vagrant resume`
 - To erase all the VMs: `vagrant destroy -f`
 - Check the status of the VMs: `vagrant status`
+
+## What next?
+- We are will add exercises for the most common tools. Coming soon!
