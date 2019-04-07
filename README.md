@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Setting up a Hadoop ecosystem for learning, developing, and testing is a time consuming task if not done properly.
+Setting up a Hadoop ecosystem for learning, developing, and testing could be a time consuming task.
 [Cloudera](https://www.cloudera.org) offers a guide for installing a Proof-of-Concept version of their Hadoop platform called [Cloudera Data Hub (CDH)](https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_non_production.html#install_embedded_db).
 This repositori aims to automate the configuration of a cluster in a local machine using [Virtualbox](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com/). **Note:** The guide explains how to install CDH Express Edition, that is good for learning and testing, but not for production or commercial use.
 
@@ -28,7 +28,8 @@ This repository is inspired from [ambari-vagrant](https://github.com/u39kun/amba
     - For Windows the file is located in `C:\Windows\System32\Drivers\etc\hosts` 
     - Windows user must append the lines in both WSL and Windows. 
 - Check the *HARDWARE NOTE* in the Vagrantfile to verify that matched your computer capabilities.
-- Run the command `bash up.sh 3` this will start three VMs. Up to 8 hosts can be selected. 
+- Run the command `bash up.sh 3` this will start three VMs.
+    - You can add up to 8 hosts. 
 - If it is the first time that you are running vagrant run `vagrant init`
 - SSH to the node `vagrant ssh c7401` the password is `vagrant`
 - Switch to sudo using `sudo su -`
