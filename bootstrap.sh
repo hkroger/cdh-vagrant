@@ -18,3 +18,13 @@ echo "/swapfile       none    swap    sw      0       0" >> /etc/fstab
 
 sudo cp /vagrant/insecure_private_key /root/ec2-keypair
 sudo chmod 600 /root/ec2-keypair
+
+sudo sysctl vm.swappiness=5
+
+sudo sh -c "echo 'vm.swappiness=5' >> /etc/sysctl.conf"
+
+sudo sh -c "echo never > /sys/kernel/mm/transparent_hugepage/defrag"
+sudo sh -c "echo 'echo never > /sys/kernel/mm/transparent_hugepage/defrag' >> /etc/rc.local"
+
+sudo sh -c "echo never > /sys/kernel/mm/transparent_hugepage/enabled"
+sudo sh -c "echo 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' >> /etc/rc.local"
