@@ -1,6 +1,4 @@
-<img src="https://pbs.twimg.com/profile_images/920034020620091392/9O3K7Y6j_400x400.jpg" alt="drawing" height="200"/>
-<img src="https://s3.amazonaws.com/hashicorp-marketing-web-assets/brand/Vagrant_VerticalLogo_FullColor.rkvQk0Hax.svg" alt="drawing" height="200"/>
-<img src="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png" alt="drawing" height="200"/>
+<img src="https://pbs.twimg.com/profile_images/920034020620091392/9O3K7Y6j_400x400.jpg" alt="drawing" height="200"/> <img src="https://s3.amazonaws.com/hashicorp-marketing-web-assets/brand/Vagrant_VerticalLogo_FullColor.rkvQk0Hax.svg" alt="drawing" height="200"/> <img src="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png" alt="drawing" height="200"/>
 
 ## Introduction
 
