@@ -6,7 +6,7 @@ Setting up a Hadoop ecosystem for learning, developing, and testing could be a t
 [Cloudera](https://www.cloudera.org) offers a guide for installing a Proof-of-Concept version of their Hadoop platform called [Cloudera Data Hub (CDH)](https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_non_production.html#install_embedded_db).
 This repositori aims to automate the configuration of a cluster in a local machine using [Virtualbox](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com/). **Note:** The guide explains how to install CDH Express Edition, that is good for learning and testing, but not for production or commercial use.
 
-This repository is inspired from [ambari-vagrant](https://github.com/u39kun/ambari-vagrant). 
+The idea of repository was inspired by [ambari-vagrant](https://github.com/u39kun/ambari-vagrant). Most of the configuration is taken from there. 
 
 ## Requisites
 - A computer with at least 16GB of RAM.
