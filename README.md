@@ -1,9 +1,9 @@
-<img src="https://pbs.twimg.com/profile_images/920034020620091392/9O3K7Y6j_400x400.jpg" alt="drawing" height="200"/> <img src="https://s3.amazonaws.com/hashicorp-marketing-web-assets/brand/Vagrant_VerticalLogo_FullColor.rkvQk0Hax.svg" alt="drawing" height="200"/> <img src="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png" alt="drawing" height="200"/>
+<img src="https://www.cloudera.com/content/dam/www/marketing/media-kit/logo-assets/cloudera_logo_darkorange.png" alt="drawing" width="200"/> <img src="https://s3.amazonaws.com/hashicorp-marketing-web-assets/brand/Vagrant_VerticalLogo_FullColor.rkvQk0Hax.svg" alt="drawing" height="200"/> <img src="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png" alt="drawing" height="200"/>
 
 ## Introduction
 
 Setting up a Hadoop ecosystem for learning, developing, and testing could be a time consuming task.
-[Cloudera](https://www.cloudera.org) offers a guide for installing a Proof-of-Concept version of their Hadoop platform called [Cloudera Data Hub (CDH)](https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_non_production.html#install_embedded_db).
+[Cloudera](https://www.cloudera.org) offers a guide for installing a Proof-of-Concept version of their Hadoop platform called [Cloudera Distribution for Hadoop (CDH)](https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_non_production.html#install_embedded_db).
 This repository aims to automate the configuration of a cluster in a local machine using [Virtualbox](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com/). **Note:** The guide explains how to install CDH Express Edition, that is good for learning and testing, but not for production or commercial use.
 
 The idea of repository was inspired by [ambari-vagrant](https://github.com/u39kun/ambari-vagrant). Most of the configuration is taken from there. 
