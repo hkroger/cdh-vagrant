@@ -32,15 +32,8 @@ The idea of repository was inspired by [ambari-vagrant](https://github.com/u39ku
 - Run the command `bash up.sh 3` this will start three VMs.
     - You can add up to 8 hosts. 
 - If it is the first time that you are running vagrant run `vagrant init`
-- SSH to the node `vagrant ssh c7401` the password is `vagrant`
-- Switch to sudo using `sudo su -`
-- Download CDH:
-    - `wget https://archive.cloudera.com/cm6/6.2.0/cloudera-manager-installer.bin`
-- Change the permissions:
-    - `chmod u+x cloudera-manager-installer.bin`
 - Run the Cloudera Manager Installer:
-    - `./cloudera-manager-installer.bin`
-    - Accept the terms and conditions
+    - `sudo /tmp/cloudera-manager-installer.bin --i-agree-to-all-licenses --noprompt --noreadme --nooptions`
     - When the installation is finished you will see a message saying that you should open your Web browser to `http://c7401.cdh.testlab:7180/`
 
 ## Setting up the Cluster

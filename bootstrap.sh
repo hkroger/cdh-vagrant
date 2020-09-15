@@ -28,3 +28,11 @@ sudo sh -c "echo 'echo never > /sys/kernel/mm/transparent_hugepage/defrag' >> /e
 
 sudo sh -c "echo never > /sys/kernel/mm/transparent_hugepage/enabled"
 sudo sh -c "echo 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' >> /etc/rc.local"
+
+
+if [[ $(hostname) == "c7401.cdh.testlab" ]]
+then
+  wget -q -O /tmp/cloudera-manager-installer.bin https://archive.cloudera.com/cm6/6.2.0/cloudera-manager-installer.bin
+  chmod u+x /tmp/cloudera-manager-installer.bin
+  # sudo /tmp/cloudera-manager-installer.bin --i-agree-to-all-licenses --noprompt --noreadme --nooptions
+fi

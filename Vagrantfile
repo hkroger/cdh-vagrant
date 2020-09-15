@@ -7,16 +7,13 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # All Vagrant configuration is done here. The most common configuration
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "bento/centos-7.4"
+  config.vm.box = "bento/centos-7.8"
 
   # Fixes changes from https://github.com/mitchellh/vagrant/pull/4707
   config.ssh.insert_key = false
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-
-  # CentOS 7.0 x86_64
-  #config.vm.box_url = "http://cloud.terry.im/vagrant/oraclelinux-7-x86_64.box"
 
   # HARDWARE NOTE: Change this values according to your hardware.
   config.vm.provider :virtualbox do |vb|
@@ -30,6 +27,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :c7401 do |c7401|
     c7401.vm.hostname = "c7401.cdh.testlab"
     c7401.vm.network :private_network, ip: "192.168.74.101"
+    c7401.vm.provider :virtualbox do |vb|
+      vb.customize ["modifyvm", :id, "--memory", 8192] # RAM allocated to each VM
+    end
   end
 
   config.vm.define :c7402 do |c7402|
